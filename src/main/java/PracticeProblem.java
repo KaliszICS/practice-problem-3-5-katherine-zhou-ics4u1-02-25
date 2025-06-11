@@ -9,8 +9,8 @@ public class PracticeProblem {
 			{"S", "", "", "", ""},
 		  };
 		  System.out.println(noOfPaths(maze));
-
 	}
+	
 	public static int searchMazeMoves(String[][] arr) {
 
 		int row = arr.length - 1;
@@ -19,7 +19,6 @@ public class PracticeProblem {
 		int noOfMoves = 0;
 
 		return dfsHelper(arr, row, col, noOfMoves);
-		
 	}
 
 	public static int dfsHelper(String[][] arr, int row, int col, int moves) {
@@ -41,8 +40,6 @@ public class PracticeProblem {
 		}
 		return Math.min(up, right);
 	}
-
-
 
 	public static int noOfPaths(String [][] arr){
 		int row =arr.length-1;
@@ -75,7 +72,4 @@ public class PracticeProblem {
 			return up+right;
 		}
 	}
-
-	
-
 }
